@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       {tweetsArray.map((tweet, index) => (
-        <Tweet key={index} tweet={tweet} />
+        <Tweet key={index + tweet.timestamp} tweet={tweet} />
       ))}
     </div>
   );
